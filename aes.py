@@ -317,10 +317,11 @@ while True:
     print('____________________________________________________________________________________________________________')
     print('\nEncrypted Text: ', cipher_text)
     print('\n____________________________________________________________________________________________________________')
-    x=input('\ndo you wnat encrypt again y/n: ')
-    if x == 'n' and x=='no':
+    x = input('\ndo you wnat encrypt again y/n: ')
+    if x == 'n' or x=='no':
         break
-    elif x != 'y' and x !='yes':
+    elif x == 'y' or x == 'yes':
+        continue
+    else:
         print('\nWrong input...')
         break
-
